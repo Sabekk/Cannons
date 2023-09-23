@@ -167,7 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f71efe5bb766bf84c9ca91788d18eb50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  poolInstance: []
+  poolInstance:
+  - name: Cannon
+    prefab: {fileID: 5731862256342224870, guid: 5dcb6d5349e49dc4699e1d6aa2e58a60, type: 3}
+    size: 50
+  - name: Bullet
+    prefab: {fileID: 7775941556721806459, guid: 9dcb971d0525bff4d80ca543bc09b4ff, type: 3}
+    size: 100
 --- !u!1 &329630763 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 249223281037191573, guid: dee97fe8edfded644ad6c3d8a8e54c0c, type: 3}
@@ -994,7 +1000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1808106725
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1027,6 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31aeae19640c31644937d29ac5f99309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  battleField: {fileID: 1808106725}
 --- !u!1 &2033761813
 GameObject:
   m_ObjectHideFlags: 0

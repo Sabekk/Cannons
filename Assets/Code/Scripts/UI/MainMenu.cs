@@ -49,8 +49,9 @@ public class MainMenu : ViewBase {
 		if (!AwailableToStart)
 			return;
 		else {
-			Events.Gameplay.OnStartGame.Invoke (choosenMode);
+			Events.Gameplay.OnSetGameplayMode.Invoke (choosenMode);
 			selectedButton = null;
+			Events.Gameplay.OnStartGame.Invoke ();
 		}
 	}
 

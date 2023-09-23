@@ -32,7 +32,7 @@ public class ObjectPool : MonoSingleton<ObjectPool> {
 			mainPoolParent = new GameObject ("Pools").transform;
 			mainPoolParent.SetParent (transform);
 		}
-		string category = name.Substring (0, name.IndexOf ('_'));
+		string category = name.Contains ("_") ? name.Substring (0, name.IndexOf ('_')) : name;
 		if (poolCategory.ContainsKey (category))
 			return poolCategory[category];
 		else {
@@ -67,7 +67,7 @@ public class ObjectPool : MonoSingleton<ObjectPool> {
 		}
 	}
 
-	public void GetAllPoolsOfType(string type, ref List<string> pools) {
+	public void GetAllPoolsOfType (string type, ref List<string> pools) {
 		foreach (var poolDictionary in poolDictionary) {
 			if (!poolDictionary.Key.Contains (type))
 				continue;

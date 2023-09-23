@@ -5,7 +5,6 @@ public class MainUI : MonoBehaviour {
 	[SerializeField] GameObject gameOverView;
 	[SerializeField] GameObject battleField;
 
-
 	private void Awake () {
 		Events.Gameplay.OnStartGame += OnStartNewGame;
 		Events.Gameplay.OnGameOver += OnGameOver;
@@ -24,7 +23,7 @@ public class MainUI : MonoBehaviour {
 		battleField.SetActive (false);
 	}
 
-	void OnStartNewGame (GameplayManager.Mode mode) {
+	void OnStartNewGame () {
 		mainMenu.SetActive (false);
 		battleField.SetActive (true);
 	}
