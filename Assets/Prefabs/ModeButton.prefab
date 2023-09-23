@@ -199,6 +199,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8119271515435082326}
+  - component: {fileID: 4129760115469634654}
   - component: {fileID: 2334085158956566121}
   - component: {fileID: 4547160135494115812}
   - component: {fileID: 2534173884356747960}
@@ -231,6 +232,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 450, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4129760115469634654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3661099333698442210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bedac0db6afe22b459a97863627e6b51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition:
+    active: {fileID: 21300000, guid: 78685c80fde6841458837f1afd63e9cc, type: 3}
+    inactive: {fileID: 21300000, guid: 31e8081580a181241ab145ba49a83ab0, type: 3}
+  mainImage: {fileID: 4547160135494115812}
+  description: {fileID: 7255383690773445090}
+  cubeImage: {fileID: 3989247658366717949}
+  cubeColor: {r: 0, g: 0, b: 0, a: 0}
+  choosenScale: 1.2
+  mode: 0
 --- !u!222 &2334085158956566121
 CanvasRenderer:
   m_ObjectHideFlags: 0
