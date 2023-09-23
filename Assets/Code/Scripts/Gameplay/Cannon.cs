@@ -64,8 +64,8 @@ public class Cannon : MonoBehaviour, ObjectPool.IPoolable {
 		}
 	}
 
-	public void Initialzie (float scale) {
-		parent = GetComponentInParent<Transform> ();
+	public void Initialzie (float scale, Transform parent) {
+		this.parent = parent;
 		recovering = false;
 		recorerTimer = 0;
 		shotingTimer = 0;

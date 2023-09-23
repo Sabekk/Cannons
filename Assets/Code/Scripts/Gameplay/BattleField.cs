@@ -37,7 +37,7 @@ public class BattleField : ViewBase {
 		for (int i = 0; i < count; i++) {
 			Cannon cannon = ObjectPool.Instance.GetFromPool ("Cannon").GetComponent<Cannon> ();
 			cannon.transform.SetParent (transform);
-			cannon.Initialzie (scale);
+			cannon.Initialzie (scale, transform);
 
 			float space = cannon.Width;
 			bool positionSet = false;

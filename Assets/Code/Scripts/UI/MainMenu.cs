@@ -36,7 +36,7 @@ public class MainMenu : ViewBase {
 		choosenMode = GameplayManager.Mode.none;
 		foreach (var button in buttons)
 			button.ToggleTransition (false);
-		
+
 		Events.UI.OnModeChange -= OnModeChange;
 	}
 
@@ -56,9 +56,9 @@ public class MainMenu : ViewBase {
 	}
 
 	void Refresh () {
-		foreach (var button in buttons) 
+		foreach (var button in buttons)
 			button.ToggleTransition (button.Mode == choosenMode);
-		
+
 		if (startButton)
 			startButton.ToggleTransition (AwailableToStart);
 	}
@@ -86,5 +86,22 @@ public class MainMenu : ViewBase {
 
 		selectedButton = buttons[currentIndex];
 		selectedButton.OnClick ();
+	}
+
+	public override void OnNavigate (string type) {
+		base.OnNavigate (type);
+		switch (type) {
+			case NAV_right:
+			StartGame ();
+			break;
+			case NAV_up:
+			CycleButtons (-1);
+			break;
+			case NAV_down:
+			CycleButtons (1);
+			break;
+			default:
+			break;
+		}
 	}
 }
