@@ -1,14 +1,15 @@
 # Cannons
 Unity version 2022.3.4f1
-Gra symujująca bitwę działek wystrzeliwująych pociski w losowym kierunku. 
-Działka mają po 3 życia. 
-Do wyboru sa 4 tryby o różnej ilości działek na planszy. 
-Koniec gry nastepuje gdy na planszy zostanie jedno działko. Gra obsługuje okazane na UI przycisku g-pada
 
-Użyto:
+A game simulating a battle of cannons firing projectiles in a random direction.
+The cannons have 3 lives.
+There are 4 modes to choose from with different numbers of cannons on the board.
+The game ends when there is one cannon left on the board. The game supports the g-pad button shown on the UI
+
+Used:
  - Object pooling
- - Eventy
- - Player input
+ - Events
+ - New input system
 
 ![image](https://github.com/Sabekk/Cannons/assets/5255050/4df00181-2fe6-4b43-9dbd-0afc06699169)
 ![image](https://github.com/Sabekk/Cannons/assets/5255050/a95afd56-1e7c-4d9a-b2b9-c72825863abc)
